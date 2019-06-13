@@ -4,7 +4,7 @@
 
     <groupId>com.corundumstudio.socketio</groupId>
     <artifactId>netty-socketio</artifactId>
-    <version>1.7.14</version>
+    <version>1.7.14-campspot</version>
     <packaging>bundle</packaging>
     <name>NettySocketIO</name>
     <description>Socket.IO server implemented on Java</description>
@@ -12,10 +12,10 @@
     <url>https://github.com/mrniko/netty-socketio</url>
 
     <scm>
-        <url>scm:git:git@github.com:mrniko/netty-socketio.git</url>
-        <connection>scm:git:git@github.com:mrniko/netty-socketio.git</connection>
-        <developerConnection>scm:git:git@github.com:mrniko/netty-socketio.git</developerConnection>
-        <tag>netty-socketio-1.7.14</tag>
+        <url>scm:git:git@github.com:campspot/netty-socketio.git</url>
+        <connection>scm:git:git@github.com:campspot/netty-socketio.git</connection>
+        <developerConnection>scm:git:git@github.com:campspot/netty-socketio.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
@@ -37,13 +37,22 @@
             </roles>
             <timezone>+4</timezone>
         </developer>
+        <developer>
+            <id>scottaj</id>
+            <name>Al Scott</name>
+            <email>al.scott@campspot.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-7</timezone>
+        </developer>
     </developers>
 
     <distributionManagement>
         <repository>
-            <id>repo1</id>
-            <name>Release</name>
-            <url>file://C:/123</url>
+            <id>central</id>
+            <name>campspot-releases</name>
+            <url>https://campspot.jfrog.io/campspot/libs-release-local</url>
         </repository>
     </distributionManagement>
 
@@ -220,7 +229,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>3.12.0</version>
                 <executions>
                     <execution>
                         <phase>verify</phase>

@@ -99,6 +99,7 @@ public class ClientHead {
         Channel prevChannel = state.update(channel);
         if (prevChannel != null) {
             clientsBox.remove(prevChannel);
+            prevChannel.close(); // https://github.com/mrniko/netty-socketio/issues/645
         }
         clientsBox.add(channel, this);
 
