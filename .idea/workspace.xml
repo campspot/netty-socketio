@@ -2,7 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2bd0f36-4f06-46c7-8bc7-59e6f22ab3f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/RoomBroadcastOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/RoomBroadcastOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/transport/WebSocketTransportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.txt" beforeDir="false" afterPath="$PROJECT_DIR$/header.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AckRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AuthorizationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/AuthorizationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/BroadcastAckCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/BroadcastAckCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/BroadcastOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/BroadcastOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ClientOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ClientOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Disconnectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Disconnectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/DisconnectableHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/DisconnectableHub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/HandshakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/HandshakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/JsonSupportWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/JsonSupportWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/MultiTypeAckCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/MultiTypeAckCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/MultiTypeArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/MultiTypeArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIONamespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIONamespace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/SocketIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/VoidAckCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/VoidAckCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ack/AckManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ack/AckManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ack/AckSchedulerKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/ack/AckSchedulerKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/AnnotationScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/AnnotationScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnConnectScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnConnectScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnDisconnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnDisconnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnDisconnectScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnDisconnectScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnEventScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/OnEventScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/ScannerEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/ScannerEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/SpringAnnotationScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/annotation/SpringAnnotationScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/AuthorizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/AuthorizeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/ClientHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/ClientHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/ClientsBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/ClientsBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/EncoderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/EncoderHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/InPacketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/InPacketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/PacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/PacketListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/SocketIOException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/SocketIOException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/SuccessAuthorizationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/SuccessAuthorizationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/TransportState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/TransportState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/WrongUrlHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/WrongUrlHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ClientListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ClientListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ConnectListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ConnectListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DataListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DataListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DefaultExceptionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DefaultExceptionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DisconnectListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/DisconnectListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ExceptionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ExceptionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ExceptionListenerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/ExceptionListenerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/MultiTypeEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/MultiTypeEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/PingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/listener/PingListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/HttpErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/HttpErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/HttpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/HttpMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/OutPacketMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/OutPacketMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/PacketsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/PacketsMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/XHROptionsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/XHROptionsMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/XHRPostMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/messages/XHRPostMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/CompositeIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/CompositeIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/IterableCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/IterableCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/EventEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/EventEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/Namespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/Namespace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/NamespacesHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/namespace/NamespacesHub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/AckArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/AckArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/AuthPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/AuthPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/JacksonJsonSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/JacksonJsonSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/JsonSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/JsonSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/PacketType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/UTF8CharsScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/protocol/UTF8CharsScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/CancelableScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/CancelableScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/HashedWheelScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/HashedWheelScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/HashedWheelTimeoutScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/HashedWheelTimeoutScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/SchedulerKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/scheduler/SchedulerKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastPubSubStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastPubSubStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastStoreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/HazelcastStoreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryPubSubStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryPubSubStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryStoreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/MemoryStoreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonPubSubStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonPubSubStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonStoreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/RedissonStoreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/StoreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/StoreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/BaseStoreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/BaseStoreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/ConnectMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/ConnectMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/DisconnectMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/DisconnectMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/DispatchMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/DispatchMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/JoinLeaveMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/JoinLeaveMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/store/pubsub/PubSubType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/BaseTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/BaseTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/NamespaceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/NamespaceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/PollingTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/PollingTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/WebSocketTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/transport/WebSocketTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/JoinIteratorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/JoinIteratorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderAckPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderAckPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderConnectionPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderConnectionPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderEventPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderEventPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderJsonPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderJsonPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderMessagePacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/DecoderMessagePacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderAckPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderAckPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderConnectionPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderConnectionPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderEventPacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderEventPacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderMessagePacketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/EncoderMessagePacketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/PayloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/corundumstudio/socketio/parser/PayloadTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,12 +151,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/RoomBroadcastOperations.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="487">
+              <caret line="355" column="26" selection-start-line="355" selection-start-column="26" selection-end-line="355" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -63,8 +179,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/AuthorizeHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/handler/ClientHead.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/CompositeIterator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/RoomBroadcastOperations.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -221,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4474000" />
+    <option name="totallyTimeSpent" value="4804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
@@ -332,17 +448,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/CompositeIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/corundumstudio/socketio/misc/CompositeIterator.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="231" column="34" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
+        <state relative-caret-position="487">
+          <caret line="355" column="26" selection-start-line="355" selection-start-column="26" selection-end-line="355" selection-end-column="26" />
         </state>
       </provider>
     </entry>
