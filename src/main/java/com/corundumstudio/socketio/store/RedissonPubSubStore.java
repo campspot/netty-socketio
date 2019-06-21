@@ -15,30 +15,29 @@
  */
 package com.corundumstudio.socketio.store;
 
-import java.util.Queue;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ConcurrentMap;
-
-import org.redisson.api.RTopic;
-import org.redisson.api.RedissonClient;
-import org.redisson.api.listener.MessageListener;
-
 import com.corundumstudio.socketio.store.pubsub.PubSubListener;
 import com.corundumstudio.socketio.store.pubsub.PubSubMessage;
 import com.corundumstudio.socketio.store.pubsub.PubSubStore;
 import com.corundumstudio.socketio.store.pubsub.PubSubType;
-
 import io.netty.util.internal.PlatformDependent;
+import org.redisson.api.RTopic;
+import org.redisson.api.RedissonClient;
+
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ConcurrentMap;
 
 public class RedissonPubSubStore implements PubSubStore {
 
+    private final String namespace;
     private final RedissonClient redissonPub;
     private final RedissonClient redissonSub;
     private final Long nodeId;
 
     private final ConcurrentMap<String, Queue<Integer>> map = PlatformDependent.newConcurrentHashMap();
 
-    public RedissonPubSubStore(RedissonClient redissonPub, RedissonClient redissonSub, Long nodeId) {
+    public RedissonPubSubStore(String namespace, RedissonClient redissonPub, RedissonClient redissonSub, Long nodeId) {
+        this.namespace = namespace;
         this.redissonPub = redissonPub;
         this.redissonSub = redissonSub;
         this.nodeId = nodeId;
@@ -47,25 +46,22 @@ public class RedissonPubSubStore implements PubSubStore {
     @Override
     public void publish(PubSubType type, PubSubMessage msg) {
         msg.setNodeId(nodeId);
-        redissonPub.getTopic(type.toString()).publish(msg);
+        redissonPub.getTopic(getEventName(type)).publish(msg);
     }
 
     @Override
     public <T extends PubSubMessage> void subscribe(PubSubType type, final PubSubListener<T> listener, Class<T> clazz) {
-        String name = type.toString();
+        String name = getEventName(type);
         RTopic topic = redissonSub.getTopic(name);
-        int regId = topic.addListener(PubSubMessage.class, new MessageListener<PubSubMessage>() {
-            @Override
-            public void onMessage(CharSequence channel, PubSubMessage msg) {
-                if (!nodeId.equals(msg.getNodeId())) {
-                    listener.onMessage((T)msg);
-                }
+        int regId = topic.addListener(PubSubMessage.class, (channel, msg) -> {
+            if (!nodeId.equals(msg.getNodeId())) {
+                listener.onMessage((T)msg);
             }
         });
 
         Queue<Integer> list = map.get(name);
         if (list == null) {
-            list = new ConcurrentLinkedQueue<Integer>();
+            list = new ConcurrentLinkedQueue<>();
             Queue<Integer> oldList = map.putIfAbsent(name, list);
             if (oldList != null) {
                 list = oldList;
@@ -74,9 +70,13 @@ public class RedissonPubSubStore implements PubSubStore {
         list.add(regId);
     }
 
+    private String getEventName(PubSubType type) {
+        return type.nameWithNamespace(namespace);
+    }
+
     @Override
     public void unsubscribe(PubSubType type) {
-        String name = type.toString();
+        String name = getEventName(type);
         Queue<Integer> regIds = map.remove(name);
         RTopic topic = redissonSub.getTopic(name);
         for (Integer id : regIds) {

@@ -20,8 +20,12 @@ public enum PubSubType {
     CONNECT, DISCONNECT, JOIN, LEAVE, DISPATCH;
 
     @Override
+    @Deprecated // use #nameWithNamespace
     public String toString() {
         return name().toLowerCase();
     }
 
+    public String nameWithNamespace(String namespace) {
+        return namespace + ":" + name().toLowerCase();
+    }
 }

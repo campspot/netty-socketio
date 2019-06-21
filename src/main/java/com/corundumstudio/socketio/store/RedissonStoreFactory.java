@@ -15,14 +15,13 @@
  */
 package com.corundumstudio.socketio.store;
 
-import java.util.Map;
-import java.util.UUID;
-
+import com.corundumstudio.socketio.store.pubsub.BaseStoreFactory;
+import com.corundumstudio.socketio.store.pubsub.PubSubStore;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 
-import com.corundumstudio.socketio.store.pubsub.BaseStoreFactory;
-import com.corundumstudio.socketio.store.pubsub.PubSubStore;
+import java.util.Map;
+import java.util.UUID;
 
 public class RedissonStoreFactory extends BaseStoreFactory {
 
@@ -32,24 +31,24 @@ public class RedissonStoreFactory extends BaseStoreFactory {
 
     private final PubSubStore pubSubStore;
 
-    public RedissonStoreFactory() {
-        this(Redisson.create());
+    public RedissonStoreFactory(String namespace) {
+        this(namespace, Redisson.create());
     }
 
-    public RedissonStoreFactory(RedissonClient redisson) {
+    public RedissonStoreFactory(String namespace, RedissonClient redisson) {
         this.redisClient = redisson;
         this.redisPub = redisson;
         this.redisSub = redisson;
 
-        this.pubSubStore = new RedissonPubSubStore(redisPub, redisSub, getNodeId());
+        this.pubSubStore = new RedissonPubSubStore(namespace, redisPub, redisSub, getNodeId());
     }
 
-    public RedissonStoreFactory(Redisson redisClient, Redisson redisPub, Redisson redisSub) {
+    public RedissonStoreFactory(String namespace, Redisson redisClient, Redisson redisPub, Redisson redisSub) {
         this.redisClient = redisClient;
         this.redisPub = redisPub;
         this.redisSub = redisSub;
 
-        this.pubSubStore = new RedissonPubSubStore(redisPub, redisSub, getNodeId());
+        this.pubSubStore = new RedissonPubSubStore(namespace, redisPub, redisSub, getNodeId());
     }
 
     @Override
