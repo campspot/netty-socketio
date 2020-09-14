@@ -177,13 +177,9 @@ public class Namespace implements SocketIONamespace {
         Set<String> joinedRooms = client.getAllRooms();        
         allClients.remove(client.getSessionId());
 
-        leave(getName(), client.getSessionId());
-        storeFactory.pubSubStore().publish(PubSubType.LEAVE, new JoinLeaveMessage(client.getSessionId(), getName(), getName()));
-
         for (String joinedRoom : joinedRooms) {
-            leave(roomClients, joinedRoom, client.getSessionId());
+            leaveRoom(joinedRoom, client.getSessionId());
         }
-        clientRooms.remove(client.getSessionId());
 
         try {
             for (DisconnectListener listener : disconnectListeners) {
